@@ -1,0 +1,3 @@
+[submodule "fpm-recipes"]
+	path = fpm-recipes
+	url = git@github.com:narkisr/fpm-recipes.git
