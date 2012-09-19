@@ -19,7 +19,6 @@ class storm {
 
   exec { 'apt-get_update':
     command     => '/usr/bin/apt-get update',
-    refreshonly => true
   }
 
   package{['unzip','openjdk-6-jdk']: ensure => present  }
