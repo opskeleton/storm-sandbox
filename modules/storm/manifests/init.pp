@@ -43,4 +43,11 @@ class storm {
     require  => Package['openjdk-6-jdk','zeromq','jzmq','unzip']
   }
 
+  file{'/opt/storm/conf/storm.yaml':
+    ensure => file,
+    source => 'puppet:///modules/storm/storm.yaml',
+    owner  => storm,
+    group  => storm,
+  }
+
 }

@@ -2,8 +2,7 @@
 group{ 'puppet': ensure  => present }
 
 node 'nimbus'{
-  class{'storm':}
-  storm::enable{'nimbus':}
+  include storm::nimbus
 }
 
 node 'worker'{
