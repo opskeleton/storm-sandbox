@@ -11,7 +11,6 @@ class storm::zookeeper {
     group  => root,
   }
 
-  # see http://tinyurl.com/d6cn393
   file { '/etc/init.d/zookeeper':
     ensure  => link,
     target  => '/lib/init/upstart-job',
