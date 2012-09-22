@@ -6,6 +6,5 @@ node 'nimbus'{
 }
 
 node 'worker'{
-  class{'storm':}
-  include storm::worker
+  include storm::supervisor
 }
