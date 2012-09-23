@@ -10,6 +10,7 @@ define storm::service() {
   service{$name:
     ensure    => running,
     provider  => upstart,
-    require   => File["/etc/init.d/${name}"]
+    require   => File["/etc/init.d/${name}"],
+    subscribe => File['/opt/storm/conf/storm.yaml']
   }
 }
