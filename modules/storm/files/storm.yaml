@@ -1,6 +1,7 @@
 ########### These MUST be filled in for a storm configuration
 storm.zookeeper.servers:
      - "192.168.1.11"
+     - "192.168.1.12"
 #     - "server2"
 # 
 nimbus.host: "192.168.1.10"
