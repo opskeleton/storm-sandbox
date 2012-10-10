@@ -17,7 +17,7 @@ $ cd fpm-recipe/storm/
 $ fpm-cook
 ```
 
-Now lets start a nimbus and 2 workers distributed:
+Now lets start a nimbus and 2 distributed workers:
 
 ```bash 
 $ vagrant up
