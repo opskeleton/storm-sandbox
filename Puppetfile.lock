@@ -1,0 +1,19 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/apt (1.1.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (3.2.0)
+
+GIT
+  remote: git://github.com/mstrauss/puppet-editfile.git
+  ref: master
+  sha: 884efdc0997af667f24625e696630e6b1db5a952
+  specs:
+    editfile (0.0.1)
+
+DEPENDENCIES
+  editfile (>= 0)
+  puppetlabs/apt (>= 0)
+  puppetlabs/stdlib (>= 0)
+
