@@ -1,13 +1,15 @@
 # About
 This is a vagrant sanbox for [storm](https://github.com/nathanmarz/storm), it includes the puppet module and the fpm-recipe in order to package and install storm.
 
+It uses the [opskeleton](https://github.com/narkisr/opskeleton) sandbox structure
+
 # Usage
 
 First build zeromq jzmq and storm packages (follow exact order):
 
+
 ```bash 
-# install required gems
-$ bundle install
+$ sudo aptitude install uuid-dev libtool -y 
 # now build packages
 $ cd fpm-recipes/zeromq/
 $ fpm-cook
