@@ -5,8 +5,6 @@ It uses the [opskeleton](https://github.com/narkisr/opskeleton) sandbox structur
 
 # Usage
 
-First build zeromq jzmq and storm packages (follow exact order):
-
 
 ```bash 
 $ vagrant box add ubuntu-12.10_puppet-3 http://ubuntuone.com/7goAh5NodKGtCF0mgbThgb
@@ -18,14 +16,13 @@ $ cd fpm-recipe/jzqm/
 $ fpm-cook
 $ cd fpm-recipe/storm/
 $ fpm-cook
-$ vagrant up
-$ wget 192.168.1.10:8080
 ```
 
 Now lets start a nimbus and 2 distributed workers:
 
 ```bash 
 $ vagrant up
+$ wget 192.168.1.10:8080
 ```
 
 
