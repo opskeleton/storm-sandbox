@@ -7,7 +7,10 @@ It uses the [opskeleton](https://github.com/narkisr/opskeleton) sandbox structur
 
 
 ```bash 
-$ vagrant box add ubuntu-12.10_puppet-3 http://ubuntuone.com/7goAh5NodKGtCF0mgbThgb
+
+# An ubuntu box is required
+$ vagrant box add ubuntu-12.10_puppet-3 <url>
+# install prequisits
 $ librarian-puppet install 
 # require for zmq jzmq packages build
 $ sudo aptitude install uuid-dev libtool -y 
